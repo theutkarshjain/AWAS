@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function login(){
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        AndroidFunction.login(email,password);
+        }
+    </script>
+</head>
+<body>
+
+<section class="section-book" id="section-book">
+    <div class="row">
+        <div class="book">
+            <div class="book__form">
+                <form action="#popup" class="form">
+                    <div class="u-margin-bottom-medium">
+                        <h2 class="heading-secondary">
+                            Login
+                        </h2>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Email Id" id="email" required >
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="password" class="form__input" placeholder="Password" id="password" required>
+                        <label for="password" class="form__label">Password</label>
+                    </div>
+
+                    <div class="form__group">
+                        <button class="btn btn--green" onclick="javascript:return login()">Login &rarr;</button>
+                    </div>
+                    <!--<div class="form__group">-->
+                        <!--<button class="btn btn&#45;&#45;green" onclick="RegisterCSMC.html">CSMC &rarr;</button>-->
+                    <!--</div>-->
+                    <!--<div class="form__group">-->
+                        <!--<button class="btn btn&#45;&#45;green" onclick="builderregistration.html">Builder &rarr;</button>-->
+                    <!--</div>-->
+
+
+                    <div class="form__group">
+                        <a href="RegisterCSMC.html" class="navigation__lin" style="color: black">  <label class="form__label" style="margin-left:5px; margin-top:25px">Don't have an account? Register Here CSMC</label></a>
+                    </div>
+                    <div class="form__group">
+                        <a href="builderregister.html" class="navigation__lin" style="color: black">  <label class="form__label" style="margin-left:5px; margin-top:25px">Don't have an account? Register Here Builder</label></a>
+                    </div>
+
+                    <div class="form__group">
+                      <a href="Register.html" class="navigation__lin" style="color: black">  <label class="form__label" style="margin-left:5px; margin-top:25px">Don't have an account? Register Here</label></a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>

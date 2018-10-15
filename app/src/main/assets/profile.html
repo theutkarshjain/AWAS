@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function login(){
+
+        <!--AndroidFunction.showToast();-->
+        <!--document.getElementById("current").values(myJavaScriptInterface.showToast());-->
+
+        AndroidFunction.showToast();
+        <!--var def = ["abc","abc"];-->
+        <!--var asd = AndroidFunction.showToast();-->
+        <!--var asdd = AndroidFunction.showToast(asd[2]);-->
+
+        <!--document.getElementById("current").value = asd;-->
+
+        <!--document.getElementById("current1").value = asd;-->
+        <!--document.getElementById("current2").value = asdd;-->
+        }
+</script>
+    <script type="text/javascript">
+        function logout(){
+            AndroidFunction.logout();
+        }
+    </script>
+</head>
+<body onload="login()">
+
+<header class="header" style="height:50vh">
+
+    <div class="header__text-box">
+        <h1 class="heading-primary" style="position:relative">
+            <span class="heading-primary--main" style="font-size:70px;" >AWAS</span>
+            <span class="heading-primary--sub"></span>
+        </h1>
+    </div>
+</header>
+
+<div class="navbar-wrapper" style="background:#F5F5F5" style="padding-top:0">
+
+    <div class="container" style="position:relative;top:0rem;padding-top:0rem"  >
+        <section class="section-about" style="padding-top:09rem">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    PERSONAL DETAILS
+                </h2>
+            </div>
+
+            <div class="row">
+
+                <form>
+                    <div class="row row1" style="margin-top:-65px;"> <label class="form__input labe"><b>NAME OF THE OFFICIAL : - <input type="text" value="Luv Gulati" id="current" readonly></b></label></div>
+                    <div class="row row1" style="margin-top:-65px;"> <label class="form__input labe"> <b>EMPLOYEE ID : -  <input type="text" value="001" id="current1" readonly>  </b></label></div>
+                    <div class="row row1"  style="margin-top:-65px;"><label class="form__input labe"><b>EMAIL ID : - <input type="text" value="luv@h.com" id="curren2" readonly></b></label></div>
+                    <button class="btn btn--green" onclick="javascript:return logout()" style="margin-left:40px">Logout</button>
+                    <a href="addProject.html"> <button class="btn btn--green" onclick="" style="margin-left:40px; margin-top:10px;">Add Project</button></a>
+                    <button class="btn btn--green" onclick="javascript:return logout()" style="margin-left:40px; margin-top:10px;">Add Builder</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+</div>
+</body>
+</html>

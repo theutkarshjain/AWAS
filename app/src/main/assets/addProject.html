@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function addproject(){
+        var name = document.getElementById("name").value;
+        var location = document.getElementById("location").value;
+        var lat = document.getElementById("lat").value;
+        var lot = document.getElementById("lot").value;
+        var about = document.getElementById("about").value;
+        var builder = document.getElementById("builder").value;
+        var sanctiondate = document.getElementById("sanctiondate").value;
+        var start = document.getElementById("start").value;
+        var end = document.getElementById("end").value;
+        AndroidFunction.addProject(name,location,lat,lot,about,sanctiondate,builder,start,end);
+        }
+    </script>
+</head>
+<body>
+
+
+
+<!--&lt;!&ndash; *************** Nav Bar ********************  &ndash;&gt;-->
+<!--<nav class="navbar navbar-inverse navbar-fixed-top navbar-default">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="index-2.html"><img src="img/logo.png" height="45px" onclick="#" style="margin-top:-12px; margin-left:-12px"></a>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li><a href="addProject.html">PROJECT</a></li>-->
+                <!--<li><a href="#">ANALYSIS</a></li>-->
+                <!--<li><a href="#">FINANCIAL SERVICIES</a></li>-->
+                <!--<li><a href="#">CHAT BOT</a></li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">REGISTER AS-->
+                        <!--<span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="Register.html">PUBLIC</a></li>-->
+                        <!--<li><a href="RegisterCSMC.html">CSMC</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--&lt;!&ndash;<li><a href="Register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>&ndash;&gt;-->
+                <!--<li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
+
+
+
+<!--&lt;!&ndash; *************** Nav Bar Ends ********************  &ndash;&gt;-->
+
+    <section class="section-book" id="section-book">
+        <div class="row">
+            <div class="book">
+                <div class="book__form">
+                    <form action="#popup" class="form">
+                        <div class="u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                               Add New Project
+                            </h2>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="number" class="form__input" placeholder="Project Id" id="projectid" required >
+                            <label for="name" class="form__label">Project Id</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Name of project" id="name" required>
+                            <label for="name" class="form__label">Name of Project</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Location" id="location" required>
+                            <label for="location" class="form__label">Location</label>
+                        </div>
+
+                        <div class="form__group" >
+                            <input type="number" class="form__input" placeholder="Latitude" id="lat"  required>
+                            <label for="lat" class="form__label">Latitude</label>
+                        </div>
+
+                        <div class="form__group" >
+                            <input type="number" class="form__input" placeholder="Longitude" id="lot" required>
+                            <label for="lot" class="form__label">Longitude</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="About Project" id="about" >
+                            <label for="about" class="form__label">About Project</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Name of Builder" id="builder" >
+                            <label for="builder" class="form__label">Name Of Builder</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="date" class="form__input" placeholder="Sanction Date" id="sanctiondate" >
+                            <label for="sanctiondate" class="form__label">Sanction Date</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="date" class="form__input" placeholder="Start Date" id="start" >
+                            <label for="start" class="form__label">Start Date</label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="date" class="form__input" placeholder="End Date" id="end" >
+                            <label for="end" class="form__label">End Date</label>
+                        </div>
+
+                        <div class="form__group">
+                            <button class="btn btn--green" onclick="javascript:return addproject()">Add Project &rarr;</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function registerbuilder(){
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var id = document.getElementById("id").value;
+        var name = document.getElementById("name").value;
+        var cno = document.getElementById("cno").value;
+        var gst = document.getElementById("gst").value;
+        var ano = document.getElementById("ano").value;
+        var oproject = document.getElementById("oproject").value;
+        var cproject = document.getElementById("cproject").value;
+        AndroidFunction.registerbuilder(email,password,id,name,cno,gst,ano,oproject,cproject);
+        }
+    </script>
+</head>
+<body>
+
+
+<section class="section-book" id="section-book">
+    <div class="row">
+        <div class="book">
+            <div class="book__form">
+                <form action="#popup" class="form">
+                    <div class="u-margin-bottom-medium">
+                        <h2 class="heading-secondary">
+                            Register As Builder
+                        </h2>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="number" class="form__input" placeholder="ID" id="id" required>
+                        <label for="id" class="form__label">ID</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Name" id="name" required>
+                        <label for="name" class="form__label">Name</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Email Id" id="email" required >
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="number" class="form__input" placeholder="Contact Number" id="cno" required>
+                        <label for="cno" class="form__label">Contact Number</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="number" class="form__input" placeholder="GSTin Number" id="gst" required>
+                        <label for="gst" class="form__label">GSTin Number</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="number" class="form__input" placeholder="Aadhaar Number" id="ano" required>
+                        <label for="ano" class="form__label">Aadhaar Number</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="number" class="form__input" placeholder="Ongoing Projects" id="oproject" required>
+                        <label for="oproject" class="form__label">Ongoing Projects</label>
+                    </div>
+
+
+                    <div class="form__group">
+                        <input type="number" class="form__input" placeholder="Current Projects" id="cproject" required>
+                        <label for="cproject" class="form__label">Current Projects</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="password" class="form__input" placeholder="Password" id="password" required>
+                        <label for="password" class="form__label">Password</label>
+                    </div>
+
+                    <div class="form__group">
+                        <button class="btn btn--green" onclick="javascript:return registerbuilder()">Register &rarr;</button>
+                    </div>
+
+                    <!--<div class="form__group">-->
+                    <!--<a href="Register.html" class="navigation__lin" style="color: black">  <label class="form__label" style="margin-left:5px; margin-top:25px">Don't have an account? Register Here</label></a>-->
+                    <!--</div>-->
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>

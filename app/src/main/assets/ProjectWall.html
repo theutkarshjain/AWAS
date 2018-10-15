@@ -1,0 +1,366 @@
+<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%> -->
+
+<html>
+<head>
+ <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Csmc Dashboard</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- MetisMenu CSS -->
+        <link href="css/metisMenu.min.css" rel="stylesheet">
+
+        <!-- Timeline CSS -->
+        <link href="css/timeline.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/startmin.css" rel="stylesheet">
+
+        <!-- Morris Charts CSS -->
+        <link href="css/morris.css" rel="stylesheet">
+        
+        <link href="css/circle.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        
+   
+</head>
+
+<body>
+<!--<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"  -->
+     <!--url="jdbc:mysql://localhost/sih"  -->
+     <!--user="root"  password="luv"/> -->
+     <!---->
+     <!---->
+     <!--<sql:query dataSource="${db}" var="rs">  -->
+<!--SELECT * from project ;  -->
+<!--</sql:query>-->
+
+
+
+<!--<sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"  -->
+     <!--url="jdbc:mysql://localhost/sih"  -->
+     <!--user="root"  password="luv"/> -->
+     <!---->
+     <!---->
+     <!--<sql:query dataSource="${db}" var="rs">  -->
+<!--SELECT * from project  ;  -->
+<!--</sql:query>-->
+
+
+
+<!--<div id="wrapper">-->
+
+                <!--&lt;!&ndash;&lt;!&ndash; /.navbar-top-links &ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<% &ndash;&gt;-->
+<!--&lt;!&ndash;String valid=(String)session.getAttribute("valid");&ndash;&gt;-->
+<!--&lt;!&ndash;pageContext.setAttribute("valid", valid);&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;%>&ndash;&gt;-->
+				<!--&lt;!&ndash;&ndash;&gt;-->
+				<!--&lt;!&ndash;<c:if test='${valid=="csmc" }'>&ndash;&gt;-->
+				<!--&lt;!&ndash;&ndash;&gt;-->
+				<!---->
+			   <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a class="navbar-brand" href="home.jsp">AWAS</a>-->
+                <!--</div>-->
+
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
+                    <!--<span class="sr-only">Toggle navigation</span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+
+                <!--<ul class="nav navbar-nav navbar-left navbar-top-links">-->
+                    <!--<li><a href="home.jsp"><i class="fa fa-home fa-fw"></i> Home</a></li>-->
+                <!--</ul>-->
+                <!--<ul class="nav navbar-right navbar-top-links">-->
+                   <!---->
+                    <!--<li class="dropdown">-->
+                        <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#">-->
+                            <!--<i class="fa fa-user fa-fw"></i> Gulati Rocks <b class="caret"></b>-->
+                        <!--</a>-->
+                        <!--<form action="logout.jsp" method="get">-->
+                        <!--<button type="submit" value="logout"></button>-->
+                        <!--</form>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <!--&lt;!&ndash; /.navbar-top-links &ndash;&gt;-->
+
+                <!--<div class="navbar-default sidebar" role="navigation">-->
+                    <!--<div class="sidebar-nav navbar-collapse">-->
+                        <!--<ul class="nav" id="side-menu">-->
+                            <!--<li class="sidebar-search">-->
+                                <!--<div class="input-group custom-search-form">-->
+                                    <!--<input type="text" class="form-control" placeholder="Search...">-->
+                                    <!--<span class="input-group-btn">-->
+                                        <!--<button class="btn btn-primary" type="button">-->
+                                            <!--<i class="fa fa-search"></i>-->
+                                        <!--</button>-->
+                                <!--</span>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash; /input-group &ndash;&gt;-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="AddProject.jsp" class="active"><i class="fa fa-dashboard fa-fw"></i> Add new Projects</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Sort By<span class="fa arrow"></span></a>-->
+                                <!--<ul class="nav nav-second-level">-->
+                                    <!--<li>-->
+                                        <!--<a href="sortdate.jsp">Date</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="ucp.jsp">UCP</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="areasort1.jsp">District</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="pstatus.jsp">Project Status</a>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                                <!--&lt;!&ndash; /.nav-second-level &ndash;&gt;-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="livestatus.jsp"><i class="fa fa-table fa-fw"></i> Live Monitoring</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="pstatus.jsp"><i class="fa fa-edit fa-fw"></i>Projects Status</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="all.jsp"><i class="fa fa-edit fa-fw"></i> List all Projects</a>-->
+                            <!--</li>-->
+                              <!--<li>-->
+                                <!--<a href="update.jsp"><i class="fa fa-edit fa-fw"></i> Latest Updates</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="allemergency.jsp"><i class="fa fa-edit fa-fw"></i>Emergency</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="allreport.jsp"><i class="fa fa-edit fa-fw"></i>Updated Reports</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</nav>-->
+            <!--&lt;!&ndash;</c:if>&ndash;&gt;-->
+            <!--&lt;!&ndash;<c:if test='${valid=="builder" }'>&ndash;&gt;-->
+             <!--<div class="navbar-default sidebar" role="navigation">-->
+                    <!--<div class="sidebar-nav navbar-collapse">-->
+                        <!--<ul class="nav" id="side-menu">-->
+                            <!--<li class="sidebar-search">-->
+                                <!--<div class="input-group custom-search-form">-->
+                                    <!--<input type="text" class="form-control" placeholder="Search...">-->
+                                    <!--<span class="input-group-btn">-->
+                                        <!--<button class="btn btn-primary" type="button">-->
+                                            <!--<i class="fa fa-search"></i>-->
+                                        <!--</button>-->
+                                <!--</span>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash; /input-group &ndash;&gt;-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="Alloted.jsp" class="active"><i class="fa fa-dashboard fa-fw"></i> Alloted Projects</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Sort By<span class="fa arrow"></span></a>-->
+                                <!--<ul class="nav nav-second-level">-->
+                                    <!--<li>-->
+                                        <!--<a href="sortdate.jsp">Date</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="ucp.jsp">UCP</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="areasort.jsp">District</a>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<a href="pstatus.jsp">Project Status</a>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                                <!--&lt;!&ndash; /.nav-second-level &ndash;&gt;-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="livestatus.jsp"><i class="fa fa-table fa-fw"></i> Live Monitoring</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="forms.html"><i class="fa fa-edit fa-fw"></i> Select Projects</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="all.jsp"><i class="fa fa-edit fa-fw"></i> List all Projects</a>-->
+                            <!--</li>-->
+                              <!--<li>-->
+                                <!--<a href="forms.html"><i class="fa fa-edit fa-fw"></i></a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</nav>-->
+            <!---->
+            <!---->
+            <!--</c:if>-->
+
+          <!--</div>-->
+
+            <!--<div id="page-wrapper">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-lg-12">-->
+                        <!--<h1 class="page-header">Sorted Projects on date</h1>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; /.col-lg-12 &ndash;&gt;-->
+                <!--</div>-->
+                <!--</div>-->
+               <!---->
+                <!---->
+                <!---->
+                
+
+<!--<c:forEach var="table" items="${rs.rows}"> -->
+
+ 
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+						<div class="col-lg-12">
+						<div class="panel panel-default">
+						
+						
+						
+                        <div class="panel-body" style="height:400px; width:400px;">
+						
+<div style="float=right;">
+
+
+<div class="c100 p25">
+
+  <span>25%</span>
+
+  <div class="slice">
+
+    <div class="bar"></div>
+
+    <div class="fill"></div>
+
+  </div>
+
+</div>
+							<div class="srpDataWrap" itemprop="description">
+    <span>Project ID  <b><c:out value="${table.pid}"/> </b> @ <b class="WebRupee f13 mr5 fwn"></b></span>
+    
+        <div class="clr pdt8"></div>
+        <span class="doElip ">
+            Location :
+            
+
+                
+
+                <a data-bid="15852" target="_blank" class="sName" title="${table.loc}" href="https://www.99acres.com/dlf-the-crest-sector-54-gurgaon-npxid-r8664?src=SRP">
+            
+0            <b>
+                <c:out value="${table.loc}"/></b><hr>
+            </a>
+        </span>
+		
+    
+
+    <div class="sep clr mt3imp"></div>
+    
+    <span><span><b>Highlights:&nbsp;</b></span><span>Floors:<c:out value="${table.floors}"/>&nbsp;</span><span> <span>/&nbsp;</span> Under Construction&nbsp;</span><span> <span>/&nbsp;</span>  Possession By :<c:out value="${table.end}"/>&nbsp;</span><span> <span>/&nbsp;</span> Freehold&nbsp;</span><span> <span>/&nbsp;</span> 18th Floor (out of 38)&nbsp;</span></span><div class="sep clr"></div></br>
+
+    
+        <div class="lf  f12 wBr"><hr>
+            <b>Description :</b>
+            <span class="srpDes">Dlf crest, golf course road, gurgaon.4 bhk park and pool facing apartment available for sale. Centrally air conditioned</span><span class="elipDots">... </span><span class="descHidden"><c:out value="${table.desc}"/></span><hr>
+        </div>
+		<div class="lf f13 hm10 mb5" itemscope="seller-info" itemtype="http://schema.org/RealEstateAgent">
+            
+                Dealer :
+                <a data-pid="246485" class="hverU blkImp srpTplTrck" title="Khushi Housing Solutions Pvt Ltd, Gurgaon" target="_blank" href="/khushi-housing-solutions-pvt-ltd-delhi-south-drid-246485" itemprop="url">
+                    <c:out value="${table.builder}"/></a>
+            
+            
+            
+            
+                <meta itemprop="name" content="Khushi Housing Solutions Pvt Ltd">
+            
+        &nbsp;&nbsp;&nbsp;&nbsp;Started :<c:out value="${table.date}"/></div></br>
+		<form action="pidses" method="get">
+<input type="hidden" value=${table.pid} name="p">
+<button type="submit" class="btn btn-success">View</button>
+
+</form>
+    
+
+    
+
+    
+      
+    
+</div>
+                              
+                            </div>
+                            </div>
+                        </div>
+						
+                          </div> 
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+</div>
+           
+            <!-- /.container-fluid -->
+   </div>
+<br>
+</c:forEach> 
+
+</div>
+
+
+</div>
+                
+                
+                      <script src="js\\jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js\\bootstrap.min.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="js\\metisMenu.min.js"></script>
+
+        <!-- Morris Charts JavaScript -->
+        <script src="js\\raphael.min.js"></script>
+        <script src="js\\morris.min.js"></script>
+        <script src="js\\morris-data.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="js\\startmin.js"></script>
+
+    </body>
+</html>
